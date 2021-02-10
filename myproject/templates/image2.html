@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{%block title %}Django Image page 2{% endblock %}
+{% load static%}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" >
+            <img src="{%static 're2.jpg'%}" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-6" >
+            <img src="{%static 're.jpg'%}" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+</div>
+{% endblock %}
